@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+header, section, footer{
+    
+    margin: 0 auto;
+}
+header{
+    height: 150px;
+    width: 960px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 5em;
+    font-family: 'Reenie Beanie', cursive;
+    margin-right: 250px;
+    margin-left: 20px;
+}
+
+nav ul
+{
+    position: relative;
+    top: 30px;
+}
+
+nav ul li{
+    display: inline;  
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+nav ul li+li{
+    margin-left: 60px;
+    
+}
+
+
+
+#imgBox{
+    height: 350px;
+    width: 960px;
+    background-color: lightgray;
+}
+
+ img
+{
+    height: 350px;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+
+#mainBox{
+    height: 350px;
+    width: 960px;
+    background-color: rgb(228, 225, 224);
+    display: flex;
+    /* flex: wrap; */
+    align-content: space-around;
+    align-items: flex-start;
+    border-radius: 15px 15px 0 0;
+    
+
+
+}
+article:first-child{
+    height: 330px;
+    width: 45%;
+    background-color: rgb(53, 48, 95);
+    margin: 10px 24px;
+    border-radius: 15px;
+}
+
+article:last-child{
+    height: 330px;
+    width: 45%;
+    background-color: rgb(48, 40, 48);  
+    margin: 10px 24px;
+    border-radius: 15px;
+}
+
+article p{
+    color: white;
+}
+
+footer{
+    background-color: red;
+    height: 35px;
+    width: 960px;
+    
+}
+footer p{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Reenie Beanie', cursive;
+    
+}
+
+@media screen and (max-width: 438px) {
+
+
+    header{
+        height: 150px;
+        width: 100%;
+        background-color: black;
+        display: block;
+        /* align-items: flex-start; */
+        flex-direction: row;
+    }
+
+    h1
+    {
+        width: 100%;
+       text-align: center ;
+       font-size: 3.5em;
+    }
+
+    nav ul
+{}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Reenie Beanie', cursive;
+    
+}
+
+nav ul li{
+    margin-left: 80px;
+    align-self: center;
+}
+
+#imgBox {
+width: 100%;
+height: 350px;
+
+}
+section img 
+{
+    width: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+#mainBox {
+    display: block;
+    width: 100%;
+    height: 350px;
+    }
+
+article:first-child {
+width: 100%;
+height: 250px;
+display: block;
+margin: 0;
+border-radius: 0;
+}
+
+article:last-child {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    }
+
+footer {
+width: 100%;
+position: relative;
+top: 150px;
+
+}
+
+}
